@@ -1,13 +1,13 @@
 // axios 基础的封装
 import axios from 'axios'
 
-const httpInatance = axios.create({
+const httpInstance = axios.create({
   baseURL: 'http://pcapi-xiaotuxian-front-devtest.itheima.net',
   timeout: 5000
 })
 
 // 添加请求拦截器
-httpInatance.interceptors.request.use(function (config) {
+httpInstance.interceptors.request.use(function (config) {
   // 在发送请求之前做些什么
   return config;
 }, function (error) {
@@ -17,7 +17,7 @@ httpInatance.interceptors.request.use(function (config) {
 
 
 // 添加响应拦截器
-httpInatance.interceptors.response.use(function (response) {
+httpInstance.interceptors.response.use(function (response) {
   // 对响应数据做点什么
   return response;
 }, function (error) {
@@ -25,4 +25,4 @@ httpInatance.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 
-export default httpInatance
+export default httpInstance
