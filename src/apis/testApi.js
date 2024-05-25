@@ -1,7 +1,7 @@
-import httpInatance from '@/utils/http'
+import httpInstance from '@/utils/http'
 
 export function getCategory() {
-  return httpInatance({
+  return httpInstance({
     url: 'home/category/head'
   })
 }
