@@ -23,3 +23,10 @@ export function getHotApi() {
     url: '/home/hot'
   })
 }
+
+//获取所有商品模块
+export function getGoodsApi() {
+  return httpInstance({
+    url: '/home/goods'
+  })
+}
