@@ -5,7 +5,9 @@ import {onMounted,ref} from 'vue'
 const bannerList = ref([])
 
 const getBanner = async()=> {
-  const res = await getBannerApi()
+  const res = await getBannerApi({
+    distributionSite: '2'
+  })
   console.log(res)
   bannerList.value = res.data.result
 }
