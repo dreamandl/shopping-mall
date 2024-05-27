@@ -12,9 +12,10 @@ onMounted(() => categoryStore.getCategory())
 </script>
 
 <template>
+  <LayoutFixed/>
   <LayoutNav />
   <LayoutHeader />
+  <!-- <RouterView :key="$route-fullPath"/> -->
   <RouterView />
   <LayoutFooter />
-  <LayoutFixed/>
 </template>
