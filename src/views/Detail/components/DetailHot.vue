@@ -16,6 +16,7 @@ const TYPEMAP = {
   1: '24小时热榜',
   2: '周热榜'
 }
+
 const title = computed(() => TYPEMAP[props.hotType])
 
 //1。 封装接口
