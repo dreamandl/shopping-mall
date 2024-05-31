@@ -19,3 +19,13 @@ export const findNewCartListApi = () => {
     url: '/member/cart'
   })
 }
+
+export const delCartApi = (ids) => {
+  return request({
+    url: '',
+    method: 'DELETE',
+    data: {
+      ids
+    }
+  })
+}
