@@ -11,3 +11,12 @@ export const loginApi = ({ account, password }) => {
     }
   })
 }
+
+export const getLikeListApi = ({ limit = 4 }) => {
+  return request({
+    url: '/goods/relevant',
+    params: {
+      limit
+    }
+  })
+}
