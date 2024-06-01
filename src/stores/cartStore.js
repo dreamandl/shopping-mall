@@ -14,7 +14,7 @@ export const useCartStore = defineStore('cart', () => {
   //获取最新购物车列表action函数
   const updateNewList = async () => {
     const res = await findNewCartListApi()
-    cartList.value = res.result
+    cartList.value = res.data.result
   }
 
   // 定义action - addCart

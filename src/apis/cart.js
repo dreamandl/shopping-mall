@@ -22,7 +22,7 @@ export const findNewCartListApi = () => {
 
 export const delCartApi = (ids) => {
   return request({
-    url: '',
+    url: '/member/cart',
     method: 'DELETE',
     data: {
       ids
